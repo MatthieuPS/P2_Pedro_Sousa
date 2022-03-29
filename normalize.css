@@ -231,6 +231,19 @@ button {
   justify-content: space-between;
 }
 
+.cards--stars {
+  margin-left: 5px;
+}
+
+.star--blue {
+  color: #0065FC;
+}
+
+.star--grey {
+  color: #F2F2F2;
+}
+
+
 /* POPULAIRE */
 
 .pop {
