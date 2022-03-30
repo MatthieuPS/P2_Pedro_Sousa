@@ -56,6 +56,10 @@ li, a {
   flex-direction: column;
 }
 
+form {
+  padding-top: 20px;
+}
+
 .main--input {
   border: 1px solid #F2F2F2;
   font-weight: 700;
@@ -84,6 +88,7 @@ margin-right: -5px;
 .search-glass {
   display: none;
 }
+
 /* FILTRES */
 
 .filtres--wrapper{
@@ -128,11 +133,18 @@ margin-right: -5px;
 }
 
 .i {
-  margin: -19px 0 33px 20px;
+  margin: -23px 0 33px 42px;
+  font-weight: 500;
 }
 
-.circle--info {
-
+.circle-info {
+  border: 1px solid #DEEBFF;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
  color: #0065FC;
 }
 
@@ -403,9 +415,11 @@ margin-right: -5px;
     }
 
     /* FILTRES */
-    
+  
+
     .filtres--wrapper {
   flex-direction: row;
+  margin-left: 30px;
     }   
 
     .filtres--wrapper li {
@@ -415,16 +429,39 @@ margin-right: -5px;
     .filtres--wrapper ul {
       padding-left: 0;
       flex-wrap: wrap;
-      margin-left: -110px;
+      margin: 60px 0 0 -110px;
     }
 
     .filtres--title {
-      margin-top: -10px;
+      margin-top: 27px;
+    }
+
+    .i {
+      margin-left: 52px;
+    }
+
+    .circle-info {
+      margin: 20px 0 0 15px;
     }
   
         /* FORM */
 
- 
+        h1 {
+          margin-bottom: -3px;
+          font-size: x-large;
+        }
+
+      .main--wrapper {
+        margin-left: 23px;
+      }
+
+        .search-glass {
+          display: inline;
+        }
+
+        .main-button span {
+          display: none;
+        }
 
     /* POPULAIRES */
 
@@ -442,11 +479,30 @@ margin-right: -5px;
     /* HEBERGEMENTS*/
 
     .hebergements--content {
-      flex-direction: column;
+      flex-direction: column-reverse;
     }
 
-    .hebergements--cards:hover, .populaires--cards:hover,  .activity--cards:hover {
-      transform: scale(0.9);
+    .hebergements--wrapper {
+      background-color: transparent;
+      border-radius: 0%;
+      width: 100%;
+    }
+
+    .hebergements--title {
+      margin: 30px 40px -20px 0;
+      padding-top: 30px
+    }
+
+    .hebergements--cards {
+      background-color: none;
+      width: 21.30em;
+      box-shadow: 0px 5px 4px #999;
+      height: 13.80em
+    }
+
+    .hebergements--more {
+      margin: 50px 214px 0 0;
+      font-size: x-large;
     }
 
     /* ACTIVITY */
@@ -466,4 +522,19 @@ margin-right: -5px;
      width: 360px;
      height: 140px;
     }
+
+    /* FOOTER */
+
+    .footer--wrapper {
+      margin: 930px 0 0 -17px;
+    }
+
+    .footer--menu {
+      flex-direction: column;
+    }  
+    
+    .footer--link ul {
+      margin-right: 0;
+    }
+
 }
